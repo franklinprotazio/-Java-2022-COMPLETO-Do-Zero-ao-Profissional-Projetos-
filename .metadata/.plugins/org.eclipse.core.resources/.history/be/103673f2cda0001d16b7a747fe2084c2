@@ -1,0 +1,20 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class Temperatura {
+	public static final int DIFERENCA = 32;
+	public static final double FATOR = 5/9.0;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Digite a temperatura em fahrenheit");
+		int fahrenheit = teclado.nextInt();
+		int celsius = (int) ((fahrenheit - DIFERENCA ) * FATOR);
+		System.err.println("A temperatura convertida em celsius eh: " + celsius);
+		teclado.close();
+
+	}
+
+}
