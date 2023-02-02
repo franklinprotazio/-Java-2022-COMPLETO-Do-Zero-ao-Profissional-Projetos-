@@ -1,0 +1,16 @@
+package fundamentos;
+
+public class DesafioAritmeticas {
+
+	public static void main(String[] args) {
+		
+		int a = 3+2;
+		int b = 6 * a;
+		int c = (int) Math.pow(b, 2);
+		int d = 3*2;
+		int e = c/d;
+		System.out.println(e);
+
+	}
+
+}

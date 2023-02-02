@@ -1,0 +1,30 @@
+package fundamentos;
+
+//import java.util.Locale;
+import java.util.Scanner;
+
+public class DesafioConversao {
+
+	public static void main(String[] args) {
+	//	Locale.setDefault(new Locale("en", "US"));
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.print("Digite o primeiro salario: ");
+		String primeiroSalario = teclado.nextLine();
+		
+		System.out.print("Digite o segundo salario: ");
+		String segundoSalario = teclado.nextLine();
+		
+		System.out.print("Difite o terceiro salario: ");
+		String terceiroSalario = teclado.nextLine();
+		
+		Double soma = Double.parseDouble(primeiroSalario.replace(',','.')) + Double.parseDouble(segundoSalario.replace(',', '.')) + Double.parseDouble(terceiroSalario.replace(',','.'));
+		
+		Double media = soma / 3;
+		System.out.println(media);
+		
+		
+		teclado.close();
+	}
+
+}
